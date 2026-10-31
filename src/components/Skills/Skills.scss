@@ -1,0 +1,72 @@
+.skills {
+  padding: 5rem 2rem;
+  background-color: rgba(15, 23, 42, 0.5);
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__card {
+    background-color: rgba(30, 41, 59, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: #38bdf8;
+      transform: translateY(-4px);
+      background-color: rgba(30, 41, 59, 1);
+    }
+
+    &-icon {
+      font-size: 2rem;
+      background-color: rgba(56, 189, 248, 0.1);
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+    }
+
+    &-title {
+      font-size: 1.1rem;
+      color: #f8fafc;
+      font-weight: 600;
+    }
+
+    &-level {
+      font-size: 0.85rem;
+      color: #38bdf8;
+      font-weight: 500;
+    }
+  }
+}

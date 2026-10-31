@@ -1,0 +1,76 @@
+.contact {
+  padding: 5rem 2rem 2rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+
+  &__container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f8fafc;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+  }
+
+  &__card {
+    background-color: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.25rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    text-align: left;
+    transition: all 0.3s ease;
+    min-width: 220px;
+
+    &:hover {
+      border-color: #38bdf8;
+      transform: translateY(-4px);
+      background-color: rgba(30, 41, 59, 0.9);
+    }
+
+    &-icon {
+      font-size: 1.8rem;
+    }
+
+    &-label {
+      display: block;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    &-value {
+      font-size: 1rem;
+      color: #38bdf8;
+      font-weight: 600;
+    }
+  }
+
+  &__bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+}
